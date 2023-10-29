@@ -1,0 +1,96 @@
+.style1{
+    width: 85%; 
+    background-color: #BF753D;
+    box-shadow: 5px 5px 18px 0px rgba(0,0,0,0.70);
+}
+a{
+    text-decoration: none;
+}
+.style1 img{
+    width: 100% !important; 
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#Navbar :active{
+    color: black !important;
+}
+#navbarToggler a:hover{
+    color: greenyellow !important;
+}
+.style1:hover{
+    background:#86522C;
+
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.background {
+    background-image: url('./asset/image 5.png');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+  }
+  @media (min-width: 1200px){
+
+    #beranda button{
+        width: 10% !important;
+    }
+    #beranda img{
+        width: 50% !important;
+        margin-left: -1rem !important;
+    }
+    #beranda p{
+        inline-size: 40vw !important;
+    }
+    .style1{
+        width: 70% !important; 
+        background-color: #BF753D !important;
+        box-shadow: 5px 5px 18px 0px rgba(0,0,0,0.70) !important;
+    }
+    .style1 img{
+        width: 15% !important; 
+    }
+    #aboutUs p{
+        inline-size: 40vw !important;
+    }
+    #TargetScan img{
+        width: 25% !important;
+    }
+  }  
+
+
+  @keyframes Home {
+	0% {
+		transform: scaleX(0);
+		transform-origin: 0% 0%;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: 0% 0%;
+	}
+}
+@keyframes HomeTitle {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
